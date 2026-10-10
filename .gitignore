@@ -1,0 +1,40 @@
+# Compilados y ejecutables
+*.exe
+*.out
+*.app
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Archivos de depuración y temporales
+*.pdb
+*.idb
+*.ilk
+*.tmp
+*.log
+*.bak
+
+# Carpetas de compilación
+build/
+bin/
+out/
+dist/
+
+# Configuraciones de IDE y entorno
+.vscode/*
+!.vscode/settings.json
+!.vscode/c_cpp_properties.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.idea/
+*.sublime-workspace
+*.sublime-project
+.vs/
+
+# Clangd index cache
+.cache/
+.clangd/

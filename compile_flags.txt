@@ -1,0 +1,8 @@
+-std=c++17
+-Wall
+-Wno-unused-variable
+-Wno-unused-parameter
+-Wno-unused-but-set-variable
+-I/msys64/ucrt64/include/c++/13.2.0
+-I/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32
+-I/msys64/ucrt64/include

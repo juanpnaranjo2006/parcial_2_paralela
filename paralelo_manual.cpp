@@ -7,7 +7,8 @@
 #include <thread>
 #include <vector>
 
-// Generador o selector de kernel tipo Sobel (horizontal/X) para 3x3, 5x5, 7x7 y 11x11
+// Generador o selector de kernel tipo Sobel (horizontal/X) para 3x3, 5x5, 7x7 y
+// 11x11
 std::vector<float> get_sobel_kernel(size_t k_size) {
   std::vector<float> kernel(k_size * k_size, 0.0f);
   int half = static_cast<int>(k_size / 2);
@@ -41,7 +42,7 @@ std::vector<float> get_sobel_kernel(size_t k_size) {
     }
   } else if (k_size == 11) {
     const float pascal11[11] = {1, 10, 45, 120, 210, 252, 210, 120, 45, 10, 1};
-    const float diff11[11]   = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5};
+    const float diff11[11] = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5};
     for (int r = 0; r < 11; ++r) {
       for (int c = 0; c < 11; ++c) {
         kernel[r * 11 + c] = pascal11[r] * diff11[c];
@@ -62,6 +63,7 @@ void convolution_worker(size_t start_row, size_t end_row, const float *input,
                         float *output, size_t width, size_t height,
                         const float *kernel, size_t k_size) {
   // TODO: Implementar lógica de convolución por hilo
+  ;
 }
 
 // Convolución 2D Paralela Manual (a implementar manualmente)
@@ -70,6 +72,7 @@ void convolution_2d_parallel(const std::vector<float> &input,
                              size_t height, const std::vector<float> &kernel,
                              size_t k_size, size_t num_threads) {
   // TODO: Implementar lanzamiento y sincronización de hilos
+  ;
 }
 
 int main(int argc, char *argv[]) {
@@ -83,7 +86,8 @@ int main(int argc, char *argv[]) {
   size_t k_size = std::stoul(argv[2]);
   size_t num_threads = std::stoul(argv[3]);
 
-  // TODO: Inicializar memoria, ejecutar medición con std::chrono e imprimir TIME_MS:<tiempo>
+  // TODO: Inicializar memoria, ejecutar medición con std::chrono e imprimir
+  // TIME_MS:<tiempo>
 
   return 0;
 }
