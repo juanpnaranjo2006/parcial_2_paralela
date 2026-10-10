@@ -4,6 +4,14 @@ Este proyecto tiene como objetivo evaluar y cuantificar el impacto de la paralel
 
 ---
 
+## 💬 Prompts y Registro de Interacción con la IA
+
+Todos los **prompts** utilizados para la conceptualización, diseño, generación del código, configuración del benchmark y análisis de resultados se encuentran documentados cronológicamente en el archivo:
+
+- 📄 **[`conversacion_ia_proyecto.md`](./conversacion_ia_proyecto.md)**: Bitácora completa de la interacción humano-IA, incluyendo cada solicitud (prompt) y la correspondiente respuesta del modelo.
+
+---
+
 ## 📁 Estructura del Proyecto
 
 - **`tester.cpp`**: Orquestador automático del benchmark. Ejecuta de forma exhaustiva las combinaciones de tamaños de imagen, kernels e hilos con 30 repeticiones por configuración y exporta las métricas consolidadas en formato CSV compatible con Excel.
